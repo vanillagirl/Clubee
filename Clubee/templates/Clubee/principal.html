@@ -4,8 +4,8 @@
     <section class="content-section bg-light" id="about">
       <div class="container text-center">
         <div class="row">
-          <div style="font-size: 35px !important" class="col-lg-10 mx-auto">
-            <h2>¡Sé parte de las comunidades que Clubee te ofrece!</h2>
+          <div class="col-lg-10 mx-auto">
+            <h2 style="font-size: 35px !important">¡Sé parte de las comunidades que Clubee te ofrece!</h2>
             <p style="font-size: 30px !important" class="lead mb-5">Echa un vistazo a algunos de los clubes más populares creados por nuestros usuarios</p>
             <div class="row">
               {% for club in clubes %}
@@ -13,8 +13,8 @@
                 <div class="Logo_tarjeta_populares" style="background-image: url('{{ club.logo }}')">
                 </div>
                 <div class="tarjeta_populares">
-                  <div style="font-size: 30px !important" lass="tarjeta_titulo">{{ club.nombre }}</div>
-                  <div style="font-size: 25px !important" class="tarjeta_descripcion">{{ club.descripcion }}</div>
+                  <div style="font-size: 28px !important" lass="tarjeta_titulo">{{ club.nombre }}</div>
+                  <div style="font-size: 20px !important" class="tarjeta_descripcion">{{ club.descripcion }}</div>
                 </div>
               </div>
               {% endfor %}
@@ -78,11 +78,11 @@
     <!-- Callout -->
     <section class="callout">
       <div class="container text-center">
-        <h2 class="mx-auto mb-5">¡Conoce nuestros<em> clubs</em>!</h2>
+        <h2 class="mx-auto mb-5" style="font-size: 40px !important">¡Conoce nuestros<em> clubs</em>!</h2>
          {% if user.is_authenticated %}
-         <a class="btn btn-primary btn-xl" href="{% url 'lista' %}">Ver lista de clubs</a>
+         <a class="btn btn-primary btn-xl" href="{% url 'lista' %}" style="font-size: 20px !important">Ver lista de clubs</a>
          {% else %}
-         <a class="btn btn-primary btn-xl" href="{% url 'login' %}">Ver lista de clubs</a>
+         <a class="btn btn-primary btn-xl" href="{% url 'login' %}" style="font-size: 20px !important">Ver lista de clubs</a>
          {% endif %}
       </div>
     </section>
@@ -146,9 +146,9 @@
     <!-- Call to Action -->
     <section style="background-color: #155d74 !important"class="content-section bg-primary text-white">
       <div class="container text-center">
-        <h2 class="mb-4">Crea una cuenta y conviértete en miembro de un club</h2>
-        <a href="{% url 'login' %}" class="btn btn-xl btn-light mr-4">Crear una cuenta</a>
-        <a href="{% url 'login' %}" class="btn btn-xl btn-dark">¡Ya tengo una cuenta!</a>
+        <h2 class="mb-4" style="font-size: 35px !important">Crea una cuenta y conviértete en miembro de un club</h2>
+        <a href="{% url 'login' %}" class="btn btn-xl btn-light mr-4" style="font-size: 20px !important">Crear una cuenta</a>
+        <a href="{% url 'login' %}" class="btn btn-xl btn-dark" style="font-size: 20px !important">¡Ya tengo una cuenta!</a>
       </div>
     </section>
 
