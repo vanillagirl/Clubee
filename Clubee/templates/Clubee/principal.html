@@ -4,17 +4,17 @@
     <section class="content-section bg-light" id="about">
       <div class="container text-center">
         <div class="row">
-          <div class="col-lg-10 mx-auto">
+          <div style="font-size: 35px !important" class="col-lg-10 mx-auto">
             <h2>¡Sé parte de las comunidades que Clubee te ofrece!</h2>
-            <p class="lead mb-5">Echa un vistazo a algunos de los clubes más populares creados por nuestros usuarios</p>
+            <p style="font-size: 30px !important" class="lead mb-5">Echa un vistazo a algunos de los clubes más populares creados por nuestros usuarios</p>
             <div class="row">
               {% for club in clubes %}
               <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 fondo_tarjeta">
                 <div class="Logo_tarjeta_populares" style="background-image: url('{{ club.logo }}')">
                 </div>
                 <div class="tarjeta_populares">
-                  <div class="tarjeta_titulo">{{ club.nombre }}</div>
-                  <div class="tarjeta_descripcion">{{ club.descripcion }}</div>
+                  <div style="font-size: 30px !important" lass="tarjeta_titulo">{{ club.nombre }}</div>
+                  <div style="font-size: 25px !important" class="tarjeta_descripcion">{{ club.descripcion }}</div>
                 </div>
               </div>
               {% endfor %}
