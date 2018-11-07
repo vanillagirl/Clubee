@@ -15,6 +15,7 @@ class Club(models.Model):
     nombre = models.CharField(max_length=50)
     descripcion = models.CharField(max_length=150)
     logo = models.CharField(max_length=255)
+    categoria = models.CharField(max_length=255, default="Club")
     usuarios = models.ManyToManyField(Usuario, through='MiembroClub')
 
     def __str__(self):

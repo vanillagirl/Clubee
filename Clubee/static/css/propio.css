@@ -1,4 +1,36 @@
+.fondo_tarjeta {
+  background-color: #131413;
+  border: #FFF 3px solid;
+  border-bottom: #ECB301 15px solid;
+  margin-bottom: 15px;
+}
+
 .tarjeta_populares {
-  background-color: blue !important;
-  height: 500px;
+  color: #FFF;
+  height: 150px;
+}
+
+.Logo_tarjeta_populares {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+  margin: auto;
+  border-radius: 100px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.tarjeta_titulo {
+  font-weight: bold;
+  font-size: 25px;
+  border-bottom: #ECB301 3px solid;
+  padding-bottom: 10px;
+  margin-top: 15px;
+}
+
+.tarjeta_descripcion {
+  margin-top: 15px;
 }
